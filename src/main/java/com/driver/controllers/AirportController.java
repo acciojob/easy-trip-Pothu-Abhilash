@@ -16,6 +16,7 @@ import java.util.Objects;
 
 @RestController
 public class AirportController {
+    HashMap<String, String>AirportDB = new HashMap<>();
     @PostMapping("/add_airport")
     public String addAirport(@RequestBody Airport airport){
 
@@ -133,6 +134,4 @@ public class AirportController {
 
        return null;
     }
-
-
 }
